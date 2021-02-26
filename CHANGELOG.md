@@ -1,23 +1,15 @@
 # EPUBCheck change log
 
 <a name="4.2.5"></a>
-# [4.2.5](https://github.com/w3c/epubcheck/compare/v4.2.4...v4.2.5) (2021-02-26)
+## [4.2.5](https://github.com/w3c/epubcheck/compare/v4.2.4...v4.2.5) (2021-02-26)
 
 This is the **latest production-ready** release of EPUBCheck, which provides complete support for checking conformance to the [EPUB 3.2](https://w3c.github.io/publ-epub-revision/epub32/spec/epub-spec.html) family of specifications.
 
-Version 4.2.5 is a maintenance release, made by the DAISY Consortium for the W3C. Many thanks to everyone who contributed!
+Version 4.2.5 is a maintenance release. It adds several new checks for Media Overlays, updates the HTML schemas to the latest version availabe, and  includes various other bug fixes and adjustments (see the detailed list below).
+
+This release was made by the DAISY Consortium for the W3C. Many thanks to everyone who contributed and reported issues!
 
 This EPUBCheck version is also available in the Maven Central Repository as [`org.w3c:epubcheck:4.2.5`](https://search.maven.org/artifact/org.w3c/epubcheck/4.2.5/jar).
-
-### Bug Fixes
-
-* allow empty `xml:lang` attributes in Package Documents ([177af8f](https://github.com/w3c/epubcheck/commit/177af8f)), closes [#777](https://github.com/w3c/epubcheck/issues/777)
-* allow the 'glossary' manifest item property ([d1727d8](https://github.com/w3c/epubcheck/commit/d1727d8)), closes [#1170](https://github.com/w3c/epubcheck/issues/1170)
-* do not report fragment-only CSS URLs ([6fa3312](https://github.com/w3c/epubcheck/commit/6fa3312)), closes [#1198](https://github.com/w3c/epubcheck/issues/1198)
-* do not require the Navigation Document to have an index in an Index Publication ([33f2f99](https://github.com/w3c/epubcheck/commit/33f2f99)), closes [#1122](https://github.com/w3c/epubcheck/issues/1122)
-* do not treat escaped <a> elements as hyperlinks in HTM-053 ([5949b6c](https://github.com/w3c/epubcheck/commit/5949b6c)), closes [#1182](https://github.com/w3c/epubcheck/issues/1182)
-* remove the user directory only at the start of paths (in messages) ([5ee72e7](https://github.com/w3c/epubcheck/commit/5ee72e7)), closes [#1181](https://github.com/w3c/epubcheck/issues/1181)
-
 
 ### Features
 
@@ -32,6 +24,15 @@ This EPUBCheck version is also available in the Maven Central Repository as [`or
 * report unknown 'epub:type' values in overlays as USAGE only ([#1171](https://github.com/w3c/epubcheck/issues/1171)) ([f8a2517](https://github.com/w3c/epubcheck/commit/f8a2517))
 * update HTML schemas from the HTML Checker ([56dcbd1](https://github.com/w3c/epubcheck/commit/56dcbd1))
 * verify 'media:duration' property use valid SMIL clock values ([794b7ce](https://github.com/w3c/epubcheck/commit/794b7ce)), closes [#1174](https://github.com/w3c/epubcheck/issues/1174)
+
+### Bug Fixes
+
+* allow empty `xml:lang` attributes in Package Documents ([177af8f](https://github.com/w3c/epubcheck/commit/177af8f)), closes [#777](https://github.com/w3c/epubcheck/issues/777)
+* allow the 'glossary' manifest item property ([d1727d8](https://github.com/w3c/epubcheck/commit/d1727d8)), closes [#1170](https://github.com/w3c/epubcheck/issues/1170)
+* do not report fragment-only CSS URLs ([6fa3312](https://github.com/w3c/epubcheck/commit/6fa3312)), closes [#1198](https://github.com/w3c/epubcheck/issues/1198)
+* do not require the Navigation Document to have an index in an Index Publication ([33f2f99](https://github.com/w3c/epubcheck/commit/33f2f99)), closes [#1122](https://github.com/w3c/epubcheck/issues/1122)
+* do not treat escaped <a> elements as hyperlinks in HTM-053 ([5949b6c](https://github.com/w3c/epubcheck/commit/5949b6c)), closes [#1182](https://github.com/w3c/epubcheck/issues/1182)
+* remove the user directory only at the start of paths (in messages) ([5ee72e7](https://github.com/w3c/epubcheck/commit/5ee72e7)), closes [#1181](https://github.com/w3c/epubcheck/issues/1181)
 
 
 <a name="4.2.4"></a>
